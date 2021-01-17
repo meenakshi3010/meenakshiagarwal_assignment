@@ -1,0 +1,27 @@
+<div class="sideNavContainer col-12">
+    <div class=navHeader>Filters</div> 
+    <div class="filterHeading col-12">{{filterHeading[0]}}</div>
+    <hr class="filterSeparator">
+    <div class="row col-12 filterOptions">
+        <div *ngFor="let yearOptions of filterOptionsYear">
+            <button type="button" #yearBtn id="{{yearOptions}}year" (click)="yearButtonClick($event, yearBtn)" class="btn btn-success btnProp btn-sm" value="{{yearOptions}}">{{yearOptions}}</button>
+        </div>
+    </div>
+    <div class="filterHeading col-12">{{filterHeading[1]}}</div>
+    <hr class="filterSeparator">
+    <div class="row col-12 filterOptions">
+        <div *ngFor="let launchOptions of filterOptionsBoolean">
+            <button type="button" #launchBtn (click)="launchButtonClick($event, launchBtn)" id="{{launchOptions}}launch" class="btn btn-success btnProp btn-sm" value="{{launchOptions}}">{{launchOptions}}</button>
+        </div>
+    </div>
+    <div class="filterHeading col-12">{{filterHeading[2]}}</div>   
+    <hr class="filterSeparator">
+    <div class="row col-12 filterOptions">
+        <div *ngFor="let landOptions of filterOptionsBooleanLand">
+            <button type="button" #landBtn (click)="landButtonClick($event, landBtn)" id="{{landOptions}}land" class="btn btn-success btnProp btn-sm" value="{{landOptions}}">{{landOptions}}</button>
+        </div> 
+    </div>
+ </div>
+ 
+ 
+ 

@@ -1,0 +1,30 @@
+
+<div class="col-12 row">
+<div class="infoCardContainer" *ngFor="let item of launchData">
+    <div class="row programImage">
+        <img class="img-responsive imgClass" src="{{item.links.mission_patch}}">
+    </div> 
+    <div class="row infoHeader">{{item.mission_name ? item.mission_name : "NA"}} #{{item.flight_number ? item.flight_number : "NA"}}</div>
+    <div class="row infoHeading margin word-break"> 
+        <div class="row col-12 padding-none infoHeading">Mission Ids: {{item.mission_id.length != 0 ? '' : "No Data Available"}}</div>
+        <div class="col-12 padding-none infoText">
+            <ul class="infoText ulClass" *ngFor="let list of item.mission_id">
+                <li>{{list}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row infoHeading margin word-break">
+        Launch Year:&nbsp;&nbsp;
+        <div class="infoText"> {{item.launch_year ? item.launch_year : "No Data Available"}}</div>
+    </div>
+    <div class="row infoHeading margin word-break">
+       Successful Launch:&nbsp;&nbsp;
+       <div class="infoText">{{item.launch_success ? item.launch_success : "No Data Available"}}</div>
+    </div>
+    <div class="row infoHeading margin word-break">
+        Successful Landing:&nbsp;&nbsp;
+        <div class="infoText">{{item.launch_landing ? item.launch_landing : "No Data Available"}}</div>
+    </div>
+</div>
+<div *ngIf="launchData.length === 0">No records found</div>
+</div>

@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @media only screen and (max-width:320px){
+
+
+} */
+
+/* width */
+::-webkit-scrollbar {
+   width: 5px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1; 
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #888; 
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #555; 
+ }
+
+@media only screen and (min-width:321px) and (max-width:768px){
+ .row{
+    margin-right: 15px; 
+    margin-left: 15px;
+ }
+
+ .col-12{
+    padding-right: 15px;
+    padding-left: 10px;
+ }
+
+}
+/* 
+@media only screen and (min-width:769px){
+
+
+} */

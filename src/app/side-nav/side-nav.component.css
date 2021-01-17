@@ -1,0 +1,64 @@
+.sideNavContainer{
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.navHeader{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+.filterHeading{
+    text-align: center;
+    text-underline-position: below;
+    font-size: .8em;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.filterOptions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterSeparator{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btnProp{
+    margin: 10px 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.optionContainer{
+    margin: 0 auto;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.btn-success{
+    background-color: #C5E09B !important;
+    color: #000000;
+    border: none;
+}
+
+.btn-success:hover,.btn-success:active{
+    background-color: #7BBA00 !important;
+}
+
+.selected{
+    border: 2px solid #000;
+}
